@@ -124,7 +124,14 @@ function uniquifyArray(uniqueArr) {
     return null;
   }
 
-  
+  let newUniqueArr="";
+  for (let i=0; i<uniqueArr.length; i++){
+    if(uniqueArr.indexOf(repeatedWords) === -1){
+      newUniqueArr+= uniqueArr-repeatedWords;
+    }
+  }
+    return newUniqueArr;
+
 
 }
 
